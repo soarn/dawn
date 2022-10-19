@@ -6,8 +6,8 @@ const CONFIG = new Config({
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
-    scale: 'C'
+    location: 'Phoenix, Arizona',
+    scale: 'F'
   },
   clock: {
     format: 'h:i p',
@@ -16,8 +16,7 @@ const CONFIG = new Config({
   search: {
     engines: {
       g: ['https://google.com/search?q=', 'Google'],
-      i: ['https://ixquick.com/do/search?q=', 'Ixquick'],
-      d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
+      b: ['https://search.brave.com/search?q=', 'Brave'],
       y: ['https://youtube.com/results?search_query=', 'Youtube'],
       w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
     }
@@ -111,6 +110,11 @@ const CONFIG = new Config({
         {
           name: 'music services',
           links: [
+	    {
+	      url:'https://open.spotify.com',
+	      icon: 'brand-spotify',
+	      icon_color: '#65D36E'
+	    },
             {
               url: 'https://soundcloud.com/',
               icon: 'brand-soundcloud',
